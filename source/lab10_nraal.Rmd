@@ -1,0 +1,51 @@
+---
+title: "LAB 10"
+author: "Naomi Raal"
+date: "11/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(beepr)
+library(praise)
+library(cowsay)
+library(paletteer)
+library(sf)
+library(tidyverse)
+library(usethis)
+library(janitor)
+```
+
+
+## beepr beeps
+
+use the function `beep()` in the beepr package to make an audio alert when your code is done running 
+
+```{r, eval=FALSE}
+for (i in rev(seq(1:999))) {
+  
+  print(paste(i, "bottles of beer on the wall"))
+}
+
+# beep(99)
+
+```
+
+
+## Praise and cowsay
+
+packages with a single purpose: to be kind and fun.
+
+```{r}
+praise("${Exclamation}, ${exclamation}, ${EXCLAMATION}")
+
+praise("Holy ${creating}, Batman - this code is ${ADJECTIVE}")
+```
+
+Use cowsay::say() to make a character say something to you
+
+to edit r profile: 
+ 
+ type use::thisedit_r_profile() into console
+
